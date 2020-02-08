@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 import django_heroku
+django_heroku.settings(locals())
+
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -127,6 +129,3 @@ STATICFILES_DIRS = (
 )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-
-django_heroku.settings(locals())
