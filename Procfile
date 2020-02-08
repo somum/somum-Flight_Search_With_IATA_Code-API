@@ -1,0 +1,1 @@
+web: gunicorn othoy.wsgi --log-file -
